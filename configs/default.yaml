@@ -4,11 +4,10 @@ tensorf:
   data_dim_color: 27
   # dataset depended
   n_lamb_sigma : [16,16,16]
-  # [16,16,16] 로 yaml 설정되어있는데 에러 -> 함수 선언시(density_n_comp) default 값인 8. 이거 그냥 default 가 이상한듯
+  # 함수 선언시(density_n_comp) default 값은 8로 되어있음 why?
   n_lamb_sh : [48,48,48]
-  # [48,48,48] 이상하다, 이걸로 해야되는데 에러남, 함수 선언(appearance_n_comp) default 값인 24로 해보자
+  # 함수 선언시(density_n_comp) default 값은 8로 되어있음 why?
 
-  # 아마 민감...?
   N_voxel_init:  2097156 # 128**3 : Tanks/Truck # 262144...?
   N_voxel_final : 27000000 # 300**3 : Tanks/Truck
   near_far: [0.01,6.0] # tanks: [0.01, 6.0], llff: [0.1, 1.0]
